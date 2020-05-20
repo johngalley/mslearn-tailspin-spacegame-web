@@ -9,7 +9,7 @@ trigger:
 pool:
   vmImage: 'ubuntu-16.04'
   demands:
-  -npm
+  - npm
 
 variables:
   buildConfiguration: 'Release'
@@ -48,4 +48,3 @@ steps:
     command: 'build'
     arguments: '--no-restore --configuration Release'
     projects: '**/*.csproj'
-    
